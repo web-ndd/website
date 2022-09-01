@@ -4,8 +4,13 @@
 
 <div>
     <form action="/compose" method="post">
-        <input type="text" name="newPost">
-        <button type="submit" name="newPostButton" value="newPostValue">Postar</button>
+        <div class="form-group">
+            <label>Titulo</label>
+            <input type="text" name="postTitle"  class="form-control">
+            <label>Conteudo</label>
+            <textarea name="postContent" cols="30" rows="5"class="form-control"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" name="newPostButton" value="newPostValue">Postar</button>
     </form>
 </div>
 
